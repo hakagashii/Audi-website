@@ -298,9 +298,6 @@ footer .footer ul a {
   #design .container .camera .title img {
     margin-bottom: 40px;
   }
-  #design .row {
-    grid-template-columns: 1fr;
-  }
   #design .row .sensors img {
     margin-top: 40px;
   }
@@ -415,8 +412,9 @@ footer .footer ul a {
     width: 720px;
   }
   #design .container .row {
-    display: flex;
-    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
   }
   #design .container .row .sensors,
   #design .container .row .camera,
